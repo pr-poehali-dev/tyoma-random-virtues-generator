@@ -13,28 +13,28 @@ const NAV_ITEMS = [
 ];
 
 const STRENGTHS = [
-  { icon: "Brain", label: "Умный", desc: "Задачи щёлкаю как семечки 🧠", color: "#b44fff" },
-  { icon: "Dumbbell", label: "Спортивный", desc: "Тело в форме, воля железная 💪", color: "#aaff00" },
-  { icon: "Laugh", label: "Юморист", desc: "Рассмешу кого угодно за 3 сек 😂", color: "#ff6b00" },
-  { icon: "Zap", label: "Активный", desc: "Сижу на месте? Не слышал о таком", color: "#00e5ff" },
-  { icon: "Flame", label: "Энергия", desc: "Заряжаю всех вокруг собой 🔥", color: "#ff4466" },
-  { icon: "Snowflake", label: "Северный", desc: "Мурманск закалил не по-детски ❄️", color: "#00e5ff" },
+  { icon: "Zap", label: "Скорость", desc: "Делаю всё быстро и эффективно", color: "#aaff00" },
+  { icon: "Brain", label: "Интеллект", desc: "Решаю сложные задачи легко", color: "#b44fff" },
+  { icon: "Heart", label: "Преданность", desc: "Всегда до конца за своих", color: "#ff6b00" },
+  { icon: "Star", label: "Харизма", desc: "Притягиваю людей и идеи", color: "#00e5ff" },
+  { icon: "Flame", label: "Энергия", desc: "Заряжаю всех вокруг собой", color: "#ff4466" },
+  { icon: "Lightbulb", label: "Креатив", desc: "Нестандартные решения всегда", color: "#aaff00" },
 ];
 
 const STATS = [
-  { value: "13", label: "лет", sub: "возраст" },
-  { value: "−3°", label: "средняя", sub: "температура в Мурманске" },
-  { value: "∞", label: "шуток", sub: "в запасе" },
-  { value: "100%", label: "активность", sub: "всегда в деле" },
+  { value: "21", label: "год", sub: "возраст" },
+  { value: "47+", label: "проектов", sub: "завершено" },
+  { value: "1000+", label: "идей", sub: "в голове" },
+  { value: "∞", label: "амбиций", sub: "без лимита" },
 ];
 
 const GALLERY_ITEMS = [
+  { label: "Путешествия 🌍", colors: ["#7c3aed", "#06b6d4"] },
+  { label: "Тусовки 🎉", colors: ["#ea580c", "#ec4899"] },
   { label: "Спорт 💪", colors: ["#65a30d", "#059669"] },
-  { label: "Мурманск ❄️", colors: ["#1d4ed8", "#06b6d4"] },
-  { label: "Мемы 😂", colors: ["#ea580c", "#ec4899"] },
-  { label: "Тусовки 🎉", colors: ["#7c3aed", "#ec4899"] },
-  { label: "Природа 🌲", colors: ["#15803d", "#0891b2"] },
   { label: "Музыка 🎵", colors: ["#7e22ce", "#1d4ed8"] },
+  { label: "Фото 📸", colors: ["#ca8a04", "#ea580c"] },
+  { label: "Еда 🍕", colors: ["#dc2626", "#f472b6"] },
 ];
 
 function useInView(ref: React.RefObject<Element>, once = true) {
@@ -150,7 +150,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 text-sm animate-fade-in-up"
               style={{ background: "linear-gradient(135deg,rgba(180,79,255,0.15),rgba(0,229,255,0.1))", border: "1px solid rgba(180,79,255,0.3)" }}>
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-gray-300">Тёма из Мурманска 🧊</span>
+              <span className="text-gray-300">Открыт к новым возможностям</span>
             </div>
 
             <h1 className="font-unbounded text-5xl md:text-7xl font-black leading-none mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
@@ -161,7 +161,7 @@ export default function Index() {
             </h1>
 
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 max-w-md animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              13 лет, Мурманск, вечная мерзлота и бесконечная энергия. Умный, спортивный и смешной — опасное сочетание 😈
+              Живу ярко, мыслю нестандартно, делаю невозможное — и это только начало моей истории 🚀
             </p>
 
             <div className="flex flex-wrap gap-3 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
@@ -231,17 +231,17 @@ export default function Index() {
               <p className="text-gray-300 text-lg leading-relaxed">
                 Привет! Меня зовут Артём, но все зовут меня просто{" "}
                 <strong style={{ color: "#b44fff" }}>Тёма</strong>.
-                Мне 13 лет, и я живу в самом суровом городе России — <strong style={{ color: "#00e5ff" }}>Мурманске</strong> 🧊
+                Я человек действия — если загораюсь идеей, то иду до конца.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                Пока другие жалуются на холод, я тренируюсь и шучу. Спорт — это моё, юмор — тоже моё.
-                А ещё я умный, что делает меня практически идеальным человеком 😂
+                Люблю встречи с интересными людьми, новые вызовы и нестандартные решения.
+                Моя жизнь — это постоянное движение вперёд, и я никогда не стою на месте.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                Активный по жизни: сижу без дела ровно 0 секунд в сутки. Заходи, будет весело! 👋
+                Здесь ты найдёшь всё обо мне — мои достижения, галерею и способ связаться. Заходи, не стесняйся! 👋
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                {["Спортсмен", "Отличник", "Юморист", "Северянин", "Активист"].map((tag) => (
+                {["Предприниматель", "Творец", "Командный игрок", "Визионер", "Оптимист"].map((tag) => (
                   <span key={tag} className="px-4 py-2 rounded-full text-sm text-gray-200 font-golos transition-all duration-300 cursor-default"
                     style={{ background: "linear-gradient(135deg,rgba(180,79,255,0.15),rgba(0,229,255,0.1))", border: "1px solid rgba(180,79,255,0.3)" }}
                     onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.transform = "scale(1.05)"}
@@ -338,10 +338,10 @@ export default function Index() {
           <div className={`mt-16 grid md:grid-cols-2 gap-8 ${statsInView ? "animate-fade-in-up" : "opacity-0"}`}
             style={{ animationDelay: "0.5s" }}>
             {[
-              { label: "Чувство юмора", val: 99, color: "#b44fff" },
-              { label: "Спортивность", val: 95, color: "#aaff00" },
-              { label: "Интеллект", val: 92, color: "#00e5ff" },
-              { label: "Стойкость к холоду", val: 100, color: "#ff6b00" },
+              { label: "Коммуникабельность", val: 95, color: "#b44fff" },
+              { label: "Целеустремлённость", val: 90, color: "#aaff00" },
+              { label: "Командная работа", val: 88, color: "#00e5ff" },
+              { label: "Креативность", val: 92, color: "#ff6b00" },
             ].map((bar, i) => (
               <div key={i}>
                 <div className="flex justify-between mb-2">
@@ -461,8 +461,8 @@ export default function Index() {
           <div className={`${contactsInView ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.4s" }}>
             <div className="rounded-3xl p-8 text-center"
               style={{ background: "linear-gradient(135deg,rgba(180,79,255,0.1),rgba(0,229,255,0.08))", border: "1px solid rgba(180,79,255,0.2)" }}>
-              <p className="font-unbounded text-xl font-bold text-white mb-2">Хочешь подружиться? 🤝</p>
-              <p className="text-gray-400 mb-6 font-golos">Всегда рад новым знакомствам и веселью!</p>
+              <p className="font-unbounded text-xl font-bold text-white mb-2">Хочешь поработать вместе? 🚀</p>
+              <p className="text-gray-400 mb-6 font-golos">Всегда рад новым проектам и крутым людям</p>
               <button
                 className="px-10 py-3 rounded-full font-unbounded text-sm font-bold transition-all duration-300 hover:scale-105 active:scale-95"
                 style={{
@@ -470,7 +470,7 @@ export default function Index() {
                   boxShadow: "0 0 30px rgba(255,107,0,0.3)",
                   color: "#fff"
                 }}>
-                Пишите, не стесняйтесь! 😄
+                Давай общаться!
               </button>
             </div>
           </div>
